@@ -1,0 +1,228 @@
+@media (max-width: 768px) {
+    /* Stack the header contents vertically */
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+body {
+    background-color: #f4f4f4; /* Clean light background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center; /* Center the text */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 120px; /* Adjust the logo size as needed */
+}
+
+
+nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    background-color: #333; /* Clean dark background for nav */
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: gold; /* Change text to gold on hover */
+}
+
+section, aside {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container for text and image alignment */
+article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white; /* Clean white background for articles */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px; /* Restrict width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article img {
+    margin-left: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Animation for hover */
+    width: 300px; /* Set a standard width */
+}
+
+article img:hover {
+    transform: scale(1.1); /* Scale image slightly on hover */
+}
+
+article h4, article p {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Transition for smooth appearance */
+article {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Class for when content is visible */
+article.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.footer-info {
+    flex: 1;
+}
+
+.footer-quicklinks {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-quicklinks h4 {
+    margin-bottom: 5px;
+}
+
+.footer-quicklinks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-quicklinks ul li {
+    margin-bottom: 5px;
+}
+
+.footer-quicklinks ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-quicklinks ul li a:hover {
+    color: gold; /* Same gold color for hover effect */
+}
+
+
+ul, ol {
+    padding-left: 20px;
+}
+
+form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+audio, video {
+    margin: 20px 0;
+    display: block;
+}
+}
